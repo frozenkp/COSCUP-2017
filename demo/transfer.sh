@@ -11,7 +11,7 @@ BEGIN{
 }
 {
   if(a > 2){
-    system("go run imgToData.go " path "/" $9 " >> " file);
+    system("go run imgToData_zoom.go " path "/" $9 " >> " file);
   }
   a++;
 }

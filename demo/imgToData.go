@@ -41,8 +41,8 @@ func main() {
 		}
 	}
 
-        path := strings.Split(os.Args[1], "/")
-        file := path[len(path)-1]
+	path := strings.Split(os.Args[1], "/")
+	file := path[len(path)-1]
 
 	pixel = append(pixel, string(file[0]))
 

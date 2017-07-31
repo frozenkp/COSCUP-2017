@@ -20,7 +20,7 @@ func main() {
 		panic(err)
 	}
 
-        cls := knn.NewKnnClassifier("cosine", "linear", 8)
+	cls := knn.NewKnnClassifier("cosine", "linear", 8)
 	cls.Weighted = true
 
 	cls.Fit(trainData)
