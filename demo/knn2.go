@@ -15,9 +15,9 @@ func main() {
 		panic(err)
 	}
 
-        trainData, testData := base.InstancesTrainTestSplit(rawData, 0.30)
+        trainData, testData := base.InstancesTrainTestSplit(rawData, 0.10)
 
-	cls := knn.NewKnnClassifier("cosine", "kdtree", 8)
+	cls := knn.NewKnnClassifier("cosine", "linear", 8)
 	cls.Weighted = true
 
 	cls.Fit(trainData)
