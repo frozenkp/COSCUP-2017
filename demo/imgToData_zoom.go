@@ -85,7 +85,7 @@ func main() {
 	}
 
 	// output Image
-	outputImage("out.jpg", newImage)
+	//outputImage("out.jpg", newImage)
 
 	// add target to csv
 	path := strings.Split(os.Args[1], "/")
