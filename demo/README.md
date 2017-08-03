@@ -27,11 +27,17 @@ Split the image and zoom to the max size in 20*20 image.
 ### knn2.go
 knn2.go is used for training model, it will split train.csv to `trainData` and `testData` for training.
 
-| distance method | k | train:test | precision |
-|:-:|:-:|:-:|:-:|
-| cosine | 8 | 9:1 | 0.9677 |
-| euclidean | 8 | 9:1 | 0.9035 |
-| manhattan | 8 | 9:1 | 0.9032 |
+| distance method | k | train:test | weighted | precision |
+|:-:|:-:|:-:|:-:|:-:|
+| cosine | 8 | 9:1 | false | 0.9677 |
+| euclidean | 8 | 9:1 | false | 0.9225 |
+| manhattan | 8 | 9:1 | false | 0.9161 |
+| cosine | 8 | 9:1 | true | 0.9677 |
+| euclidean | 8 | 9:1 | true | 0.9354 |
+| manhattan | 8 | 9:1 | true | 0.9677 |
+
+![unweighted](http://i.imgur.com/KO4F12c.png)
+![weighted](http://i.imgur.com/cXkVYTM.png)
 
 ## Prediction
 ### knn.go
