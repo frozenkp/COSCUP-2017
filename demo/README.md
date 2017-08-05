@@ -36,8 +36,8 @@ knn2.go is used for training model, it will split train.csv to `trainData` and `
 | euclidean | 8 | 9:1 | true | 0.9354 |
 | manhattan | 8 | 9:1 | true | 0.9677 |
 
-![unweighted](http://i.imgur.com/KO4F12c.png)
-![weighted](http://i.imgur.com/cXkVYTM.png)
+![unweighted](http://i.imgur.com/7owP5xu.png)
+![weighted](http://i.imgur.com/73RKWPs.png)
 
 ## Prediction
 ### knn.go
